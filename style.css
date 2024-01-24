@@ -4,16 +4,18 @@ body {
   text-align: center;
   background-color: rgba(133, 70, 50, 0.35);
   text-align: left;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 main {
   background-color: white;
   border-radius: 25px;
-  width: 40%;
+  width:40%;
 }
 
 .card {
-  padding: 0.7rem;
+  padding: 0.6rem;
 }
 
 img {
@@ -23,12 +25,11 @@ img {
   border-radius: 25px;
   width: 35vw;
   margin: auto;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
   padding-top: 1rem;
 }
 
 h1 {
-  font-family: young;
   font-size: 44px;
   padding-left: 20px;
   margin: 0;
@@ -36,20 +37,26 @@ h1 {
 }
 
 h2 {
-  font-family: young;
   font-size: 30px;
   color: hsl(14, 45%, 36%);
+  margin: 0.5em;
 }
 
 h2#preparation-time {
+  font-family: 'Outfit', sans-serif;  
+  font-size: 24px;
+
   color: hsl(332, 51%, 32%);
+  margin: 1rem;
+  padding-left: 0.8rem;
 }
 
 p, li, ul, ol, tr{
   font-family: young, sans-serif;
   color:grey;
-  line-height: 1.7;
-  padding: 0.3rem;
+  line-height: 1.6;
+  padding-left: 0.5rem;
+  margin: 8px;
 }
 
 b {
@@ -80,12 +87,29 @@ header, section {
 }
 
 section.preparation {
-  padding: 1.2em;
+  padding: 1em;
   margin: 1rem;
+  margin-bottom: 0;
 }
 
 section.preparation > ul {
   padding-left: 2em;
+}
+
+section.ingredients {
+  padding: 1em;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+}
+
+section.instructions {
+  padding: 1em;
+  margin-top: -1em;
+}
+
+section.nutrition {
+  padding: 1em;
+  margin-top: -1em;
 }
 
 .attribution {
@@ -101,15 +125,31 @@ ol li::marker {
   color: hsl(14, 45%, 36%);
 }
 
-.nutrition-details {
+ul li::marker {
   color: hsl(14, 45%, 36%);
 }
 
-/* table {
-  border-bottom: 1px solid black;
-} */
-
-tr {
-  border: 1px solid #ccc; /* Border style, adjust color as needed */
-  margin: 20px 0; /* Adjust the margin to control spacing around the line */
+.nutrition-details {
+  color: hsl(14, 45%, 36%);
+  padding-right: 12rem;
 }
+
+
+hr {
+  border: none;
+  border-top: 1px solid hsl(30, 18%, 87%);
+  height: 10px;
+  margin: 10px 10px;
+}
+
+td {
+  border: 1px solid hsl(30, 18%, 87%);
+  width: 90%;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  padding: 1em;
+  padding-left: 2em;
+  font-weight: 600;
+}
+
