@@ -11,18 +11,18 @@ body {
 main {
   background-color: white;
   border-radius: 25px;
-  width:40%;
+  width: 40%;
 }
 
 .card {
-  padding: 0.6rem;
+  padding: 0.5rem;
 }
 
 img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 2rem;
   width: 35vw;
   margin: auto;
   padding-bottom: 0.3rem;
@@ -43,7 +43,7 @@ h2 {
 }
 
 h2#preparation-time {
-  font-family: 'Outfit', sans-serif;  
+  font-family: 'Outfit', sans-serif;
   font-size: 24px;
 
   color: hsl(332, 51%, 32%);
@@ -51,9 +51,13 @@ h2#preparation-time {
   padding-left: 0.8rem;
 }
 
-p, li, ul, ol, tr{
+p,
+li,
+ul,
+ol,
+tr {
   font-family: young, sans-serif;
-  color:grey;
+  color: grey;
   line-height: 1.6;
   padding-left: 0.5rem;
   margin: 8px;
@@ -64,7 +68,7 @@ b {
   color: hsl(24, 5%, 18%);
 }
 
-header > p {
+header>p {
   padding: 18px;
   margin-top: 0;
   margin-bottom: 0;
@@ -75,9 +79,10 @@ header > p {
   color: hsl(332, 51%, 32%);
 }
 
-header, section {
- margin: 1rem;
- padding: 0;
+header,
+section {
+  margin: 1rem;
+  padding: 0;
 }
 
 .preparation {
@@ -92,7 +97,7 @@ section.preparation {
   margin-bottom: 0;
 }
 
-section.preparation > ul {
+section.preparation>ul {
   padding-left: 2em;
 }
 
@@ -153,3 +158,53 @@ td {
   font-weight: 600;
 }
 
+@media screen and (max-width: 480px) {
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  main {
+    background-color: white;
+    width: 100%;
+  }
+
+
+  img {
+    display: flex;
+    justify-content: center;
+    border-radius: inherit;
+    padding: 0;
+    width: 110vw;
+  }
+
+  .card {
+    padding: 0rem;
+    margin: 0;
+  } 
+
+  h1 {
+    font-size: 38px;
+    padding-left: 14px;
+    text-align: left;
+}
+
+  header > p {
+    padding: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+}
